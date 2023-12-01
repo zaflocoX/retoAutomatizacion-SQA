@@ -17,7 +17,7 @@ public class InicioSteps {
     }
 
     @Step("Seleccionar el producto 1")
-    public void SeleccionarProducto1(){
+    public void SelectProduct(){
         List<WebElement> buscarProducto = inicioPage.getDriver().findElements(inicioPage.getLiProducts());
         buscarProducto.get(Seleccion.numeroAleatorioEnRango(0,buscarProducto.size())).click();
     }
