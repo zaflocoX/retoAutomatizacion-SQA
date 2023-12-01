@@ -11,7 +11,7 @@ public class ProductSteps {
     public void seleccionarCantidad(){
         productPage.getDriver().findElement(productPage.getInputCantidad()).click();
         productPage.getDriver().findElement(productPage.getInputCantidad()).clear();
-        productPage.getDriver().findElement(productPage.getInputCantidad()).sendKeys(cantidad1);
+
     }
 
     @Step("Agregar al carro de compras")

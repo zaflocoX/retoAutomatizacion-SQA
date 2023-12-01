@@ -2,6 +2,8 @@
 
   Feature: Agregar productos al carro de compras
     Yo como usuario quiero ingresar a la página de compras
+    seleccionar productos de mi interes y agregarlos al carro de compras
+
 
 
   Scenario: Agregar productos al carro de compras
