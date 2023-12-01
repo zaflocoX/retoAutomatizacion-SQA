@@ -18,4 +18,8 @@ public class ProductSteps {
     public void agregarCarroCompras(){
         productPage.getDriver().findElement(productPage.getBtnSubmit()).click();
     }
+    @Step("Volver al inicio")
+    public void vistaPrincipal(){
+        productPage.getDriver().findElement(productPage.getBtnLogo()).click();
+    }
 }
