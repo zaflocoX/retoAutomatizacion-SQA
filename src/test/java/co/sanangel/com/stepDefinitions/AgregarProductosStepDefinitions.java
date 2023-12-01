@@ -14,25 +14,26 @@ public class AgregarProductosStepDefinitions {
 
     @Steps
     ProductSteps productSteps;
+
     @Given("^que el usuario ingresa a la pagina \"([^\"]*)\"$")
-    public void queElUsuarioIngresaALaPagina(String vinculo) {
+    public void que_el_usuario_ingresa_a_la_pagina(String vinculo) {
         inicioSteps.OpenBrowser(vinculo);
-
     }
-
-
     @When("^Busque los productos de su preferencia$")
-    public void busqueLosProductosDeSuPreferencia() {
+    public void busque_los_productos_de_su_preferencia() {
         inicioSteps.SelectProduct();
     }
 
-    @When("^agregue los prductos al carro de compras$")
-    public void agregueLosPrductosAlCarroDeCompras() {
+    @When("^selecciona las cantidades que requiere$")
+    public void selecciona_las_cantidades_que_requiere() {
         productSteps.seleccionarCantidad();
-    }
-
-    @Then("^puede seleccionar las cantidades que requiere$")
-    public void puedeSeleccionarLasCantidadesQueRequiere() {
 
     }
+
+    @Then("^agrega los productos al carro de compras$")
+    public void agrega_los_productos_al_carro_de_compras() {
+        productSteps.agregarCarroCompras();
+    }
+
+
 }
